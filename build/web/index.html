@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Plant Shop</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="LoginServlet" method="post">
+            <h3>Log in</h3>
+            <input type="text" name="txtemail" placeholder="Email"/><br>
+            <input type="text" name="txtpassword" placeholder="Password"/><br>
+            <input type="submit" value="Login"/>
+        </form>
+
+        <form action="SignUpServlet" method="post">
+            <h3>Sign up</h3>
+            <input type="text" name="txtemail" placeholder="Email"/><br>
+            <input type="text" name="txtusername" placeholder="Username"/><br>
+            <input type="text" name="txtpassword" placeholder="Password"/><br>
+            <input type="text" name="txtrepeatpassword" placeholder="Repeat Password"/><br>
+            <input type="text" name="txtphone" placeholder="Phone number"/><br>
+            <input type="text" name="txtstatus" hidden="" value="1"/><br>
+            <select name="txtrole">
+                <option value="">Your role</option>
+                <option value="1">User</option>
+                <option value="0">Admin</option>
+            </select>
+            <input type="submit" value="Signup"/>
+        </form>
+        
+        <h1><a href="SearchPlant.html"/>Search Customer</h1>
+    </body>
+</html>
